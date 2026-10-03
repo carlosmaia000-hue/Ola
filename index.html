@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Barbearia — Corte e barba com marcação em 30 segundos</title>
+<meta name="description" content="Cortes, barba e acabamentos de precisão. Marque pelo WhatsApp em 30 segundos. Avaliada com 5 estrelas pelos clientes.">
+<meta name="theme-color" content="#0e0e0e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e0e0e;--card:#171717;--line:#2a2a2a;--txt:#f4f1ea;--mut:#a39e92;--gold:#c9a24b;--gold2:#e6c374;--wa:#25d366}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font:16px/1.6 Inter,system-ui,sans-serif;padding-bottom:84px}
+h1,h2,h3{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1.1}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+section{padding:64px 0}
+h2{font-size:clamp(28px,5vw,40px);margin-bottom:8px}
+.sub{color:var(--mut);margin-bottom:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:16px 28px;border-radius:6px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-size:16px}
+.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#111}
+.btn-wa{background:var(--wa);color:#07210f}
+.btn-ghost{border:1px solid var(--line);color:var(--txt)}
+.btn:hover{filter:brightness(1.1)}
+.top{position:sticky;top:0;z-index:20;background:rgba(14,14,14,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:Oswald;font-size:22px;text-transform:uppercase;letter-spacing:.06em;color:var(--gold2);text-decoration:none}
+.top nav{display:none;gap:24px;color:var(--mut)}
+.top nav a{text-decoration:none}.top nav a:hover{color:var(--txt)}
+.top .btn{padding:10px 18px}
+@media(min-width:760px){.top nav{display:flex}}
+.hero{padding:72px 0 56px;background:radial-gradient(900px 400px at 80% -10%,#3a2f12 0,transparent 60%)}
+.hero h1{font-size:clamp(38px,8vw,72px);max-width:14ch}
+.hero h1 em{font-style:normal;color:var(--gold2)}
+.hero p{color:var(--mut);font-size:18px;max-width:46ch;margin:20px 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.proof{display:flex;flex-wrap:wrap;gap:20px 32px;margin-top:36px;color:var(--mut);font-size:14px}
+.proof b{display:block;color:var(--txt);font:700 26px Oswald}
+.stars{color:var(--gold2);letter-spacing:2px}
+.grid{display:grid;gap:16px}
+@media(min-width:760px){.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px}
+.svc{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:18px 0;border-bottom:1px solid var(--line)}
+.svc:last-child{border:0}
+.svc h3{font-size:20px}.svc small{color:var(--mut);display:block;font-family:Inter;text-transform:none}
+.price{font:700 24px Oswald;color:var(--gold2);white-space:nowrap}
+.tag{display:inline-block;background:var(--gold);color:#111;font:600 11px Inter;padding:2px 8px;border-radius:99px;margin-left:8px;vertical-align:middle;text-transform:uppercase}
+.why .ic{font-size:28px;margin-bottom:8px}
+.why h3{font-size:19px;margin-bottom:6px}.why p{color:var(--mut);font-size:15px}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}}
+.gal div{aspect-ratio:1;border-radius:8px;background:linear-gradient(135deg,#222,#161616);border:1px dashed var(--line);display:grid;place-items:center;color:var(--mut);font-size:13px;overflow:hidden}
+.gal img{width:100%;height:100%;object-fit:cover}
+.rev p{margin:10px 0 14px}.rev span{color:var(--mut);font-size:14px}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--mut);margin-top:8px}
+.hours li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);list-style:none}
+.hours{padding:0}
+.map{border:0;width:100%;height:100%;min-height:300px;border-radius:10px;filter:grayscale(.6) invert(.9) contrast(.9)}
+.final{text-align:center;background:radial-gradient(700px 300px at 50% 0,#3a2f12 0,transparent 70%)}
+.final h2{font-size:clamp(32px,6vw,52px)}
+.final .cta{justify-content:center;margin-top:24px}
+footer{padding:32px 0;color:var(--mut);font-size:14px;text-align:center;border-top:1px solid var(--line)}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:12px 16px;background:rgba(14,14,14,.95);border-top:1px solid var(--line);display:flex;gap:10px}
+.bar .btn{flex:1;padding:14px}
+@media(min-width:760px){.bar{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="logo" href="#" data-bind="name">Barbearia</a>
+  <nav><a href="#servicos">Serviços</a><a href="#porque">Porquê nós</a><a href="#avaliacoes">Avaliações</a><a href="#local">Localização</a></nav>
+  <a class="btn btn-gold" data-wa href="#">Marcar</a>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+  <p class="stars">★★★★★ <span style="color:var(--mut);letter-spacing:0" data-bind="ratingLine"></span></p>
+  <h1>O corte que <em>ninguém</em> vai deixar de notar.</h1>
+  <p>Corte, barba e acabamento de precisão, num ambiente descontraído. Sem filas: marque em 30 segundos pelo WhatsApp.</p>
+  <div class="cta">
+    <a class="btn btn-wa" data-wa href="#">💬 Marcar no WhatsApp</a>
+    <a class="btn btn-ghost" data-call href="#">📞 Ligar agora</a>
+  </div>
+  <div class="proof">
+    <div><b data-bind="rating">5,0</b>Avaliação Google</div>
+    <div><b data-bind="reviews">+100</b>Clientes satisfeitos</div>
+    <div><b>30 s</b>Para marcar</div>
+  </div>
+</div></section>
+
+<section id="servicos"><div class="wrap">
+  <h2>Serviços e preços</h2>
+  <p class="sub">Preços claros, sem surpresas.</p>
+  <div class="card" id="services"></div>
+  <div class="cta" style="margin-top:24px"><a class="btn btn-gold" data-wa href="#">Reservar o meu horário</a></div>
+</div></section>
+
+<section id="porque" style="background:#121212"><div class="wrap">
+  <h2>Porque voltam sempre</h2>
+  <p class="sub">Qualidade que se vê. Atendimento que se sente.</p>
+  <div class="grid g3 why">
+    <div class="card"><div class="ic">✂️</div><h3>Precisão de mestre</h3><p>Cada corte pensado para o seu rosto e estilo — não um corte igual para todos.</p></div>
+    <div class="card"><div class="ic">⏱️</div><h3>Pontualidade</h3><p>Hora marcada é hora atendida. O seu tempo vale tanto quanto o nosso.</p></div>
+    <div class="card"><div class="ic">🧼</div><h3>Higiene rigorosa</h3><p>Material desinfetado a cada cliente e produtos profissionais de qualidade.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>O nosso trabalho</h2>
+  <p class="sub">Resultados reais. Siga-nos no Instagram para mais.</p>
+  <div class="gal" id="gallery"></div>
+</div></section>
+
+<section id="avaliacoes" style="background:#121212"><div class="wrap">
+  <h2>O que dizem os clientes</h2>
+  <p class="sub">Avaliações verificadas no Google.</p>
+  <div class="grid g3" id="reviewsGrid"></div>
+  <div class="cta" style="margin-top:24px"><a class="btn btn-ghost" data-maps target="_blank" rel="noopener" href="#">Ver todas no Google ↗</a></div>
+</div></section>
+
+<section id="local"><div class="wrap">
+  <h2>Onde estamos</h2>
+  <p class="sub" data-bind="address"></p>
+  <div class="grid g2">
+    <div class="card">
+      <h3 style="margin-bottom:12px">Horário</h3>
+      <ul class="hours" id="hours"></ul>
+      <div class="cta" style="margin-top:20px">
+        <a class="btn btn-gold" data-maps target="_blank" rel="noopener" href="#">📍 Como chegar</a>
+        <a class="btn btn-ghost" data-call href="#">📞 Ligar</a>
+      </div>
+    </div>
+    <iframe class="map" id="map" loading="lazy" title="Mapa" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div></section>
+
+<section style="background:#121212"><div class="wrap">
+  <h2>Perguntas frequentes</h2><p class="sub"></p>
+  <div id="faq"></div>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Pronto para sair <em style="font-style:normal;color:var(--gold2)">novo</em>?</h2>
+  <p class="sub" style="margin:12px 0 0">Os melhores horários esgotam depressa. Garanta já o seu.</p>
+  <div class="cta"><a class="btn btn-wa" data-wa href="#">💬 Marcar no WhatsApp</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> <span data-bind="name"></span> · <span data-bind="address"></span></div></footer>
+
+<div class="bar">
+  <a class="btn btn-wa" data-wa href="#">💬 Marcar</a>
+  <a class="btn btn-ghost" data-call href="#">📞 Ligar</a>
+  <a class="btn btn-ghost" data-maps target="_blank" rel="noopener" href="#">📍 Mapa</a>
+</div>
+
+<script type="application/ld+json" id="ld"></script>
+<script>
+/* ===== EDITE AQUI: substitua pelos dados reais da barbearia ===== */
+const SITE = {
+  name: "Barbearia",                      // TODO nome real
+  address: "Rua Exemplo 123, Cidade",     // TODO morada real
+  phone: "+351900000000",                 // TODO telefone (formato internacional, sem espaços)
+  whatsapp: "351900000000",               // TODO número WhatsApp (sem +)
+  mapsUrl: "https://maps.app.goo.gl/HfNWsHdntC6jmwXc6", // link original do Google Maps
+  rating: "5,0", reviews: "+100",         // TODO valores reais do Google
+  waMessage: "Olá! Gostava de marcar um horário. Qual é a disponibilidade?",
+  services: [                             // TODO serviços e preços reais
+    {n:"Corte de cabelo", d:"Corte personalizado + acabamento", p:"12€", top:true},
+    {n:"Barba", d:"Toalha quente, navalha e hidratação", p:"8€"},
+    {n:"Corte + Barba", d:"O pacote completo", p:"18€", top:true},
+    {n:"Corte infantil", d:"Até aos 12 anos", p:"10€"}
+  ],
+  hours: [["Seg – Sex","09:00 – 19:30"],["Sábado","09:00 – 18:00"],["Domingo","Fechado"]],
+  reviewsList: [                          // TODO colar avaliações reais do Google
+    {t:"Melhor corte que já fiz. Atendimento impecável e preço justo.", a:"Cliente Google"},
+    {t:"Ambiente top, pontuais e muito profissionais. Recomendo.", a:"Cliente Google"},
+    {t:"A barba ficou perfeita. Já marquei a próxima.", a:"Cliente Google"}
+  ],
+  gallery: [],                            // TODO ex.: ["img/1.jpg","img/2.jpg",...]
+  faq: [
+    ["Preciso de marcar?","Recomendamos marcar pelo WhatsApp para garantir o seu horário, mas aceitamos também sem marcação conforme disponibilidade."],
+    ["Quanto tempo demora um corte?","Cerca de 30 a 45 minutos, consoante o serviço."],
+    ["Que formas de pagamento aceitam?","Numerário, cartão e MB WAY."],
+    ["Posso cancelar ou remarcar?","Claro — basta avisar-nos pelo WhatsApp com antecedência."]
+  ]
+};
+/* ================================================================ */
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const wa=`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(SITE.waMessage)}`;
+$$("[data-wa]").forEach(a=>{a.href=wa;a.target="_blank";a.rel="noopener"});
+$$("[data-call]").forEach(a=>a.href="tel:"+SITE.phone);
+$$("[data-maps]").forEach(a=>a.href=SITE.mapsUrl);
+const bind={...SITE,ratingLine:`${SITE.rating} no Google · ${SITE.reviews} avaliações`};
+$$("[data-bind]").forEach(e=>e.textContent=bind[e.dataset.bind]);
+document.title=`${SITE.name} — Corte e barba com marcação em 30 segundos`;
+$("#yr").textContent=new Date().getFullYear();
+$("#services").innerHTML=SITE.services.map(s=>`<div class="svc"><div><h3>${s.n}${s.top?'<span class="tag">Mais pedido</span>':''}</h3><small>${s.d}</small></div><div class="price">${s.p}</div></div>`).join("");
+$("#hours").innerHTML=SITE.hours.map(h=>`<li><span>${h[0]}</span><span>${h[1]}</span></li>`).join("");
+$("#reviewsGrid").innerHTML=SITE.reviewsList.map(r=>`<div class="card rev"><div class="stars">★★★★★</div><p>“${r.t}”</p><span>— ${r.a}</span></div>`).join("");
+$("#gallery").innerHTML=Array.from({length:8},(_,i)=>SITE.gallery[i]?`<div><img loading="lazy" alt="Trabalho ${i+1}" src="${SITE.gallery[i]}"></div>`:`<div>Foto ${i+1}</div>`).join("");
+$("#faq").innerHTML=SITE.faq.map(f=>`<details><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join("");
+$("#map").src="https://www.google.com/maps?q="+encodeURIComponent(SITE.name+" "+SITE.address)+"&output=embed";
+$("#ld").textContent=JSON.stringify({"@context":"https://schema.org","@type":"BarberShop",name:SITE.name,telephone:SITE.phone,address:SITE.address,hasMap:SITE.mapsUrl,aggregateRating:{"@type":"AggregateRating",ratingValue:SITE.rating.replace(",","."),reviewCount:SITE.reviews.replace(/\D/g,"")||"1"}});
+</script>
+</body>
+</html>
